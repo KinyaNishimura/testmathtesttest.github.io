@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  
+    
+    Memo
+  
+ | </title>
+
+
+
+<link rel="stylesheet" href="/testmathtesttest.github.io/book.min.6e479eb8b5bb8bdc1812d229d66394389c2630ac2eed69c7368c16b23c72f73d.css">
+
+
+<link rel="icon" href="/testmathtesttest.github.io/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="http://kinyanishimura.github.io/testmathtesttest.github.io"></a>
+</h2>
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2ftestmathtesttest.github.io\2f docs\2fmathtype\2fmemo\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<p><br><br></p>
+<ul>
+<li><a href="/testmathtesttest.github.io/"><strong>はじめに</strong></a></li>
+<li><a href="/testmathtesttest.github.io/docs/examples/">Examples</a>
+<ul>
+<li><a href="/testmathtesttest.github.io/docs/with-toc/">With Table of Contents</a></li>
+<li><a href="/testmathtesttest.github.io/docs/without-toc/">Without Table of Contents</a></li>
+<li><a href="/testmathtesttest.github.io/docs/shortcodes/">Shortcodes</a></li>
+</ul>
+</li>
+<li><strong>More Examples</strong></li>
+<li></li>
+<li><a href="/testmathtesttest.github.io/docs/mathtype/memo/">math</a></li>
+<li><a href="/testmathtesttest.github.io/docs/server/">Server</a></li>
+<li><a href="/testmathtesttest.github.io/docs/client/">Client</a></li>
+<li><a href="/testmathtesttest.github.io/docs/advanced/">Advanced</a></li>
+<li><a href="/testmathtesttest.github.io/posts/"><strong>Blog</strong></a></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/testmathtesttest.github.io/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Memo
+  
+</strong>
+</header>
+
+      
+<article class="markdown"><h1 id="デモグラフィー-をやさしく学ぶ--ワークメモ">デモグラフィー 」をやさしく学ぶ  ワークメモ</h1>
+<h4 id="担当西村-欣也-北海道大学">担当：西村 欣也 (北海道大学)</h4>
+<h3 id="-個体の生死と繁殖">◼️ 個体の生死と繁殖</h3>
+<ul>
+<li>
+<p>コホート：同時期に生まれた個体の集まり</p>
+</li>
+<li>
+<p>$l_i$ : コホートの $i$ 齢における生存割合,  出生個体の $i$ 齢における生存確率(生存率)</p>
+</li>
+<li>
+<p>$s_i$ :  $i$ 齢個体の $i+1$ 齢における生存確率(生存率),  $d_{i}$ : 死亡率 ($d_{i} =1-s_{i}$)</p>
+<p>$l$ と $s$ の関係</p>
+<p>$l_{x+2} = l_x$</p>
+<p>$$
+l_0 = l_1
+$$</p>
+</li>
+</ul>
+<p>$$
+l_{0} = 1,; l_{x+1} = s_{x}l_{x}\\<br>
+{ l }_{ x }=\prod _{ i=0 }^{ x-1 }{ { s }_{ i } }
+$$</p>
+<ul>
+<li>$b_i$ :   $i$ 齢個体の出生数(出生率)</li>
+</ul>
+<hr>
+<h4 id="生死">生死</h4>
+<p>$\alpha$</p>
+<h6 id="--平均寿命-新生個体が平均してどれくらい生きられるのか-平均死亡齢">▶︎  平均寿命 (新生個体が平均してどれくらい生きられるのか？ (平均死亡齢))</h6>
+<p>$$
+E_{0} =\sum _{ x=0 }{l_x}
+$$</p>
+<p>$$E_{0} =\sum _{ x=0 }{l_x}$$</p>
+<p>$$
+\int { l(x+1)dx }
+$$</p>
+<p>$$
+\begin{pmatrix}
+a &amp; b \\ c &amp; d
+\end{pmatrix}
+$$</p>
+<h6 id="--平均余命--x-齢の個体が平均してあとどれくらい生きられるのか">▶︎  平均余命  ($x$ 齢の個体が平均してあとどれくらい生きられるのか？)</h6>
+<p>$$
+{E_{x}} = \frac{\sum _{ i=x }\limits{ l_{ i } }}{l_{x}}\tag{2}
+$$</p>
+<h6 id="--高校3年生以上の知識でたどり着く項目-数式で考えるのに便利なので連続時間にする--">▶︎▶︎  高校3年生以上の知識でたどり着く項目 (数式で考えるのに便利なので連続時間にする)  ◀︎◀︎</h6>
+<p>​		$\mu (x)$ を $x$ 齢における瞬間死亡率とすると、出生個体の $x$ 齢の生存確率は、
+$$
+l(x) = e^{-\int_{0}^{\infty} {\mu}(s)ds}\tag{3}.
+$$</p>
+<p><img src="/images/fig1.png" alt="This is a image"></p>
+<p><div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    <figure class="left"><img src="/images/fig1.png" width="250" height="250"/><figcaption>
+            <h4>Screenshot</h4>
+        </figcaption>
+</figure>
+
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <figure class="center"><img src="/images/fig2.png" width="250" height="250"/><figcaption>
+            <h4>Screenshot</h4>
+        </figcaption>
+</figure>
+
+  </div>
+  
+</div>
+
+とういこと。</p>
+<div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    ![this is][2]
+[2]: /images/fig1.png/
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    fasdasdfadfasfafasdas
+  </div>
+  
+</div>
+
+<h4 id="生死--繁殖">生死 + 繁殖</h4>
+<h6 id="-潜在総出生数-全ての齢における出生能力の合計">▶︎ 潜在総出生数 (全ての齢における出生能力の合計)</h6>
+<p>$$
+B_0 = \sum_{x=0}{b_x}
+$$</p>
+<h6 id="-期待繁殖数--生まれてから平均してどれくらいの子を残せるのか">▶︎ 期待繁殖数  (生まれてから平均してどれくらいの子を残せるのか？)</h6>
+<p>$$
+R_{0} = \sum_{x=0}{l_{x} b_{x}}\tag{4}
+$$</p>
+<ul>
+<li>$p_{x} = \frac {{l_{ x }b_{ x } }  }{ \sum _{ x=0 }\limits{ l_{ x }b_{ x } }  } $ : 新生個体が将来にわたり生むと期待される子の総数のうち、$x$ 齢で生むと期待される子の数の割合。  **$p_x$ は $x$ の分布**</li>
+</ul>
+<h6 id="-コホートの平均繁殖齢--生まれてから平均何齢で子を産むのか">▶︎ コホートの平均繁殖齢  (生まれてから平均何齢で子を産むのか？)</h6>
+<p>$$
+T_{1} = \sum _{ x=0 }{ x, p_x } = \frac { \sum _{ x=0 }\limits{ x\hspace{0.8mm} l_{ x }b_x }  }{ \sum _{ x=0 }\limits{ l_{ x }b_x }  }\tag{5}
+$$</p>
+<p>$$
+{\rm var }(x) = \sum _{ x=0 }{ x^2, p_x } - \left(\sum _{ x=0 }{ x, p_x } \right)^2 \tag{6}
+$$</p>
+<h3 id="-個体の性質から生まれる個体群の性質">◼️ 個体の性質から生まれる個体群の性質</h3>
+<h6 id="原理">原理</h6>
+<p>$$
+N_{t+1} = N_{t} + b N_{t} - d N_{t}
+$$</p>
+<p>$$
+N_{ t+1 }=(s+b)N_{ t }={ \lambda  }{ N_{ t } }\tag{6}
+$$</p>
+<p>個体数の時間変化
+$$
+\begin{equation}
+N_{t} = {\lambda}{N_{t}}\tag{漸化式}
+\end{equation}\[10pt]　
+$$$$
+\begin{equation}
+N_{t} = {\lambda}^{t}{N_{0}}\tag{解}
+\end{equation}
+$$</p>
+<h6 id="レズリー行列">レズリー行列</h6>
+<p>$$
+\mathbf{L}=\left( \begin{array}{ccccc}{s_{0} b_{1}} &amp; {s_{1} b_{2}} &amp; {\cdots} &amp; {s_{m-1} b_{m}} &amp; {0} \ {s_{0}} &amp; {0} &amp; {0} &amp; {\cdots} &amp; {0} \ {0} &amp; {s_{1}} &amp; {0} &amp; {\cdots} &amp; {0} \ {0} &amp; {0} &amp; {\ddots} &amp; {0} &amp; {0} \ {0} &amp; {0} &amp; {0} &amp; {s_{m-1}} &amp; {0}\end{array}\right), ;
+\mathbf{n}(t)=\left( \begin{array}{c}{n_{0}(t)} \ {n_{1}(t)} \ {n_{2}(t)} \ {\vdots} \ {n_{m}(t)}\end{array}\right)
+$$</p>
+<p>個体数の時間変化
+$$
+\begin{align}
+\left( \begin{array}{c} { n_{ 0 }(t+1) } \ { n_{ 1 }(t+1) }\ { n_{ 2 }(t+1) } \ { \vdots  }  \ { n_{  m }(t+1) } \end{array} \right) =
+\left( \begin{array}{ccccc} { s_{ 0 }b_{ 1 } } &amp; { s_{ 1 }b_{ 2 } } &amp; { \cdots  } &amp; { s_{ m-1 }b_{ m } } &amp; { 0 } \ { s_{ 0 } } &amp; { 0 } &amp; { 0 } &amp; { \cdots  } &amp; { 0 } \ { 0 } &amp; { s_{ 1 } } &amp; { 0 } &amp; { \cdots  } &amp; { 0 } \ { 0 } &amp; { 0 } &amp; { \ddots  } &amp; { 0 } &amp; { 0 } \ { 0 } &amp; { 0 } &amp; { 0 } &amp; { s_{ m-1 } } &amp; { 0 } \end{array} \right)
+\left( \begin{array}{c} { n_{ 0 }(t) } \ { n_{ 1 }(t) }\ { n_{ 2 }(t) } \ { \vdots  }  \ { n_{ m }(t) } \end{array} \right)
+\end{align}
+$$
+$$
+\begin{equation}
+{\bf n}(t+1) = {\bf L },{\bf n}(t)\tag{漸化式}
+\end{equation}\[10pt]
+$$$$
+\begin{equation}
+{\bf n}(t) = {\bf L }^{ t },{\bf n}(0)\tag{解}
+\end{equation}
+$$</p>
+<p>${\bf n}{(t)}$ の一般解は、$\bf L$ の固有値($\lambda_{1} \ge \lambda_{2} \ge \cdots$)と固有ベクトル(${\bf u}_{1} \ge {\bf u}_{2} \ge \cdots$)によって
+$$
+{\bf n}(t) = {g_1}{\bf \lambda}_{1}^{t}{\bf u}_{1} +{g_2}{\bf \lambda}_{2}^{t} {\bf u}_{2} + \cdots　\tag{一般解}
+$$
+と表され、任意の初期状態 ${\bf n}{(0)}$ で、十分な時間 $t$ に対しては、
+$$
+{\mathbf n}(t)\propto {\mathbf \lambda}^{t}{\bf u}_{1}, \hspace{10mm} ({\lambda}={\lambda}_{1} )
+\tag{8}
+$$</p>
+<p>と見ることができる。${\bf u}<em>{1}$の要素は以下の比に保たれる
+$$
+{\mathbf u}</em>{1} = \left( \begin{array}{c} { u_{ 0 }(t) } \ { u_{ 1 }(t) }\ { u_{ 2 }(t) } \ { \vdots  } \ { u_{ m }(t) } \end{array} \right) \propto
+\left( \begin{array}{c} { l_{ 0 }{{\lambda}^{-0}} } \ { l_{ 1 }{{\lambda}^{-1}}}\ { l_{ 2 }{{\lambda}^{-2}}} \ { \vdots  } \  { l_{ m }{{\lambda}^{-m}} } \end{array} \right).\[10pt]\tag{9}
+$$</p>
+<ul>
+<li>個体数は $t$ についれ $\lambda$ 倍ずつ変化する指数関数に従う。</li>
+<li>個体群内の齢構成は ${\bf u}_1$ に従う一定の比率に保たれる(安定齢分布)。</li>
+</ul>
+<h3 id="--font-colorlightgray個体たちが作るfont個体群の性質lambdaを反映した個体の性質">◼️  <font color="LightGray">個体たちが作る</font>個体群の性質($\lambda$)を反映した個体の性質</h3>
+<ul>
+<li>$p_{ x }=\frac { { l_{ x }{\lambda}^{ -x } } }{ \sum _{ x=0 }{ l_{ x }{ \lambda  }^{ -x } }  } $  : 安定齢分布の集団中の$x$ 齢個体の割合。   **$ p_x$ は $x$ の分布**</li>
+</ul>
+<h6 id="-集団の平均齢">▶︎ 集団の平均齢</h6>
+<p>$$
+E_{age} =
+\sum _{ x=0 }{ x, p_x }=
+\frac { \sum _{ x=0 }\limits{ x\hspace{0.8mm} l_{ x }{\lambda}^{-x} }  }{ \sum _{ x=0 }\limits{ l_{ x }{\lambda}^{-x} }  }\tag{10}
+$$</p>
+<p>$$
+{\rm var}(x) = \sum _{ x=0 }{ x^2, p_x } -  \left(\sum _{ x=0 }{ x, p_x } \right)^2 \tag{11}
+$$</p>
+<h6 id="-世代時間">▶︎ 世代時間</h6>
+<p>$$
+T_{2} = \frac{\log{R_{0}}}{\log{\lambda}}\tag{12}
+$$</p>
+<h6 id="-ロトカオイラー方程式">▶︎ ロトカ・オイラー方程式</h6>
+<p>$$
+1 = \sum <em>{ x=0 }\limits{ l</em>{ x }b_{ x }{\lambda}^{-x} }\tag{13}
+$$</p>
+<ul>
+<li>$p_{ x }=\frac { { l_{ x }b_{ x }{ \lambda  }^{ -x } } }{ \sum _{ x=0 }{ l_{ x }{ b_{ x }, \lambda  }^{ -x } }  } = { l_{ x }b_{ x }{ \lambda  }^{ -x } }  $ : 安定齢分布の 集団中で生まれる個体の総数に対する。$x$ 齢個体の生む子の割合。   **$p_x$ は $x$ の分布**</li>
+</ul>
+<h6 id="-集団の平均繁殖齢">▶︎ 集団の平均繁殖齢</h6>
+<h1 id="sum-_-x0--x-p_x-">$$
+T_{3} =
+\sum _{ x=0 }{ x, p_x }</h1>
+<p>\frac { \sum <em>{ x=0 }\limits{ x\hspace{0.8mm} l</em>{ x }b_{ x }{\lambda}^{-x} }  }
+{ \sum _{ x=0 }\limits{ l_{ x }b_{ x }{\lambda}^{-x} }  } = \sum _{ x=0 }\limits{ x\hspace{0.8mm} l_{ x }b_{ x }{\lambda}^{-x} }
+\tag{14}
+$$</p>
+<p>$$
+{\rm var}(x) = \sum _{ x=0 }{ x^2, p_x } - \left(\sum _{ x=0 }{ x, p_x } \right)^2 \tag{15}
+$$</p>
+<h6 id="-繁殖価">▶︎ 繁殖価</h6>
+<p>$$
+\begin{eqnarray}
+V_{x} = \frac{\lambda^{-x}}{l_{x}} \sum_{t=x} l_{t} b_{t} \lambda^{-t}\tag{16}
+\end{eqnarray}\[0pt]
+$$$$
+\begin{eqnarray}
+={b_{x}}+\frac{s_{x}}{\lambda} {V_{x+1}}\tag{17}
+\end{eqnarray}
+$$</p>
+<hr>
+<h6 id="font-colorfirebrick付録font"><font color="FireBrick">付録</font></h6>
+<p>√  レズリー行列モデルは、観測(センサス)が繁殖前か後かで組み立てが違う。</p>
+<img src="fig3.png" width="600">
+</article>
+
+      
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "$", right: "$", display: false}]
+    });
+  });
+</script>
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+  <ul>
+    <li></li>
+  </ul>
+
+  <ul>
+    <li></li>
+  </ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+</html>

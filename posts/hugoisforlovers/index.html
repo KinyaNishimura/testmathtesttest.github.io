@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  
+    
+    Getting Started with Hugo
+  
+ | </title>
+
+
+
+<link rel="stylesheet" href="/testmathtesttest.github.io/book.min.6e479eb8b5bb8bdc1812d229d66394389c2630ac2eed69c7368c16b23c72f73d.css">
+
+
+<link rel="icon" href="/testmathtesttest.github.io/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="http://kinyanishimura.github.io/testmathtesttest.github.io"></a>
+</h2>
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2ftestmathtesttest.github.io\2fposts\2fhugoisforlovers\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<p><br><br></p>
+<ul>
+<li><a href="/testmathtesttest.github.io/"><strong>はじめに</strong></a></li>
+<li><a href="/testmathtesttest.github.io/docs/examples/">Examples</a>
+<ul>
+<li><a href="/testmathtesttest.github.io/docs/with-toc/">With Table of Contents</a></li>
+<li><a href="/testmathtesttest.github.io/docs/without-toc/">Without Table of Contents</a></li>
+<li><a href="/testmathtesttest.github.io/docs/shortcodes/">Shortcodes</a></li>
+</ul>
+</li>
+<li><strong>More Examples</strong></li>
+<li></li>
+<li><a href="/testmathtesttest.github.io/docs/mathtype/memo/">math</a></li>
+<li><a href="/testmathtesttest.github.io/docs/server/">Server</a></li>
+<li><a href="/testmathtesttest.github.io/docs/client/">Client</a></li>
+<li><a href="/testmathtesttest.github.io/docs/advanced/">Advanced</a></li>
+<li><a href="/testmathtesttest.github.io/posts/"><strong>Blog</strong></a></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-posts">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/testmathtesttest.github.io/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Getting Started with Hugo
+  
+</strong>
+</header>
+
+      
+
+<header class="markdown">
+  <h1>Getting Started with Hugo</h1>
+  <h5>
+    <strong>Apr 2, 2014</strong>
+  </h5>
+</header>
+<article class="markdown"><h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+<p>Go to <a href="https://github.com/spf13/hugo/releases">Hugo releases</a> and download the
+appropriate version for your OS and architecture.</p>
+<p>Save it somewhere specific as we will be using it in the next step.</p>
+<p>More complete instructions are available at <a href="https://gohugo.io/getting-started/installing/">Install Hugo</a></p>
+<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
+<p>Hugo has its own example site which happens to also be the documentation site
+you are reading right now.</p>
+<p>Follow the following steps:</p>
+<ol>
+<li>Clone the <a href="http://github.com/spf13/hugo">Hugo repository</a></li>
+<li>Go into the repo</li>
+<li>Run hugo in server mode and build the docs</li>
+<li>Open your browser to http://localhost:1313</li>
+</ol>
+<p>Corresponding pseudo commands:</p>
+<pre><code>git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Press ctrl+c to stop
+</code></pre>
+<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
+<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
+<p>Stop the Hugo process by hitting Ctrl+C.</p>
+<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
+<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&gt; Press ctrl+c to stop
+</code></pre>
+<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
+content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
+<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+<code>docs/content/overview/quickstart.md</code>.</p>
+<p>Change and save this file.. Notice what happened in your terminal.</p>
+<pre><code>&gt; Change detected, rebuilding site
+
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 26 ms
+</code></pre>
+<p>Refresh the browser and observe that the typo is now fixed.</p>
+<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
+<h2 id="step-4-have-fun">Step 4. Have fun</h2>
+<p>The best way to learn something is to play with it.</p>
+</article>
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "$", right: "$", display: false}]
+    });
+  });
+</script>
+    </div>
+  </main>
+
+  
+  
+</body>
+
+</html>
